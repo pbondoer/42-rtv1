@@ -6,7 +6,7 @@
 #    By: pbondoer <pbondoer@student.42.fr>          +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2016/12/27 20:07:03 by pbondoer          #+#    #+#              #
-#    Updated: 2016/12/31 05:23:09 by pbondoer         ###   ########.fr        #
+#    Updated: 2017/01/02 10:58:04 by pbondoer         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -36,3 +36,6 @@ endif
 MLX_LNK		+= -L $(MLX_DIR) -l mlx
 MLX_INC		= -I $(MLX_DIR)
 MLX_LIB		= $(addprefix $(MLX_DIR),$(MLX_NAME))
+
+LIB_LNK		+= $(MLX_LNK)
+LIB_INC		+= $(MLX_INC)
